@@ -5,20 +5,22 @@ import PackageDescription
 
 let package = Package(
     name: "CombineLearn",
+    defaultLocalization: "en",
+    platforms: [.iOS(.v18), .macOS(.v15), .watchOS(.v11), .tvOS(.v18), .visionOS(.v2)],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "CombineLearn",
-            targets: ["CombineLearn"]),
+        .library(name: "CombineLearn", targets: ["CombineLearn"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "CombineLearn"),
-        .testTarget(
-            name: "CombineLearnTests",
-            dependencies: ["CombineLearn"]
-        ),
-    ]
+        .target(name: "CombineLearn"),
+        .testTarget(name: "CombineLearnTests", dependencies: ["CombineLearn"]),
+    ],
+    swiftLanguageModes: [.v6, .v5]
 )
+
+// MARK: - Combine: 使用 Swift 进行异步编程 - Kedeco 网站出品
+// 目录结构
+// CombineLearnTests - Combine 入门第一节
+// Subject - 第二节
+//
+//
+//
