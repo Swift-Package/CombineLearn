@@ -9,6 +9,7 @@ import Combine
 import Testing
 
 // MARK: - Subject - 使非 Combine 命令式代码能够将值发送给 Combine 订阅者
+@Suite("2 Subject主题入门指南")
 struct Subject {
     @Test("PassthroughSubject") func passthroughSubject() async throws {
         enum MyError: Error {

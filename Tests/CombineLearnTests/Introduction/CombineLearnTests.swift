@@ -12,7 +12,7 @@ import Foundation
 
 nonisolated(unsafe) var subscriptions = Set<AnyCancellable>()
 
-// MARK: - 发布者和订阅者
+@Suite("1 发布者和订阅者入门指南")
 struct CombineLearnTests {
     @Test("使用发布者") func subscriber() async throws {
         let myNotification = Notification.Name("MyNotification")

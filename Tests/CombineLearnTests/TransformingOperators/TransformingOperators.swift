@@ -8,9 +8,10 @@
 import Testing
 import Combine
 
+@Suite("3 转换操作符")
 struct TransformingOperators {
 
-    @Test func map() async throws {
+    @Test("简单映射Map") func map() async throws {
         
         
         

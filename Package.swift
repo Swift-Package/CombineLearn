@@ -21,6 +21,6 @@ let package = Package(
 // 目录结构
 // CombineLearnTests - Combine 入门第一节
 // Subject - 第二节
-//
+// TransformingOperators - 操作符
 //
 //
